@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+struct MoviesModel: Decodable {
+    
+    let results: [MovieModel]
+
+}
+
+struct MovieModel : Decodable {
+    let collectionId : Int?
+    let collectionName : String?
+    let longDescription : String?
+    let artworkUrl100 : String?
+}
